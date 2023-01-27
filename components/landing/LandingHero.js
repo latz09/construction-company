@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../public/images/Good-Guys-Plumbing-logo2.png';
+import logo from '../../public/images/logo.png';
 import ButtonLink from '../utils/ButtonLink';
 import { motion } from 'framer-motion';
 
@@ -36,12 +36,12 @@ const LandingLogo = () => {
 			transition={{ duration: 1.9, delay: 0.7 }}
 		>
 			<div className='text-4xl lg:text-6xl font-semibold text-orange tracking-wider text-center'>
-				Good Guys <span className='text-dark/70 italic'> Plumbing</span>
+				Stumpy's Deck <span className='text-dark/70 italic'> Renewal, Inc.</span>
 			</div>
 			<span className='place-self-end text-center mx-4 text-xl lg:text-3xl text-dark/70'>
 				{' '}
-				When water troubles arise, call the{' '}
-				<span className='font-bold text-orange'> Good Guys.</span>
+				The Twin Cities most respected decking company for 
+				<span className='font-bold text-orange'> over two decades.</span>
 			</span>
 		</motion.div>
 	);

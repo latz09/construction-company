@@ -9,10 +9,12 @@ import image9 from '../../public/images/why-us-carousel/c9.jpg';
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { carouselImages } from '../../data/data';
 
 const ImageCarousel = ({}) => {
-	const images = [image1, image3, image4, image5, image6, image7, image9];
+	console.log(carouselImages)
 
+	const images = carouselImages
 	const [imageIndex, setImageIndex] = useState(0);
 	const prevImage = () => {
 		imageIndex === 0
@@ -27,16 +29,17 @@ const ImageCarousel = ({}) => {
 	};
 
 	return (
-		<div className='flex flex-col p-12 m-8 lg:m-0 gap-8  h-full '>
+		<div className='flex flex-col place-items-center  gap-8  m-4 h-full '>
 			<motion.div
-				className='  shadow-lg'
+				className=' '
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
 				transition={{ delay: .3, duration: 1.1 }}
 			>
-				<Image src={images[imageIndex]} alt='' priority={true}/>
+				<div className="grid place-items-center shadow-xl">
+				<Image src={images[imageIndex].src} alt='' priority={true} width={600} height={ 400}  /></div>
 			</motion.div>
-			<div className=''>
+			<div className='w-full'>
 				<ToggleIndex prevImage={prevImage} nextImage={nextImage} />
 			</div>
 		</div>
@@ -47,7 +50,7 @@ export default ImageCarousel;
 
 const ToggleIndex = ({ prevImage, nextImage }) => {
 	return (
-		<div className=' text-4xl text-orange flex justify-evenly w-full h-full'>
+		<div className=' text-4xl text-orange flex justify-center space-x-16 w-full h-full'>
 			<button
 				className='hover:scale-110 transition duration-700'
 				onClick={prevImage}

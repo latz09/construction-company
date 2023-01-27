@@ -23,7 +23,7 @@ const Logo = () => {
 	return (
 		<div>
 			<h1 className=' sm:mx-2 text-3xl font-semibold tracking-widest uppercase text-light1'>
-				Good Guys <span className='text-light1 font-thin'> Plumbing</span>
+				Stumpy's Deck  
 			</h1>
 		</div>
 	);

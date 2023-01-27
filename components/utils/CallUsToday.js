@@ -8,12 +8,13 @@ const CallUsToday = () => {
 					Call Us Today
 				</span>
 				<span className='text-xl lg:text-4xl text-light1 pt-2'>
-					WHEN WATER TROUBLES ARISE,{' '}
-					<span className='font-bold text-white'> CALL THE GOOD GUYS. </span>
+					When you want it done right...
+					<span className='font-bold text-white'> Call Stumpy's. </span>
 				</span>
 			
+
 				<div className='py-5'>
-					<ButtonLink title='Call Now: 952-239-7200' color='orange' />
+					<ButtonLink title='Call Now: 651-208-2371' color='orange' />
 				</div>
 			</div>
 		</div>

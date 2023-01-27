@@ -3,8 +3,11 @@ import CardLayout from '../components/utils/Card';
 import { BsHandThumbsUp } from 'react-icons/bs';
 import { openingCards, reasons, services } from '../data/data';
 import WhyUs from '../components/whyUs/WhyUs';
-import ServicesCard from '../components/cards/ServicesLayout';
+
 import CallUsToday from '../components/utils/CallUsToday';
+import Awards from '../components/awards/Awards';
+import ImageCarousel from '../components/utils/ImageCarousel';
+import CarouselContainer from '../components/layout/Carousel';
 
 export default function Home() {
 
@@ -12,9 +15,10 @@ export default function Home() {
 		<div className='grid  gap-16'>
 			<LandingHero />
 			<CardLayout data={openingCards} />
+			<Awards />
 			<WhyUs data={reasons} />
-			<ServicesCard data={services}/>
 			<CallUsToday />
+		<ImageCarousel />
 		</div>
 	);
 }
