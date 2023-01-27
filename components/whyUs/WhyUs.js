@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const WhyUs = ({ data, images }) => {
 	return (
-		<div className=' grid gap-8 lg:gap-16 max-w-7xl mx-auto my-24 xl:pb-16 xl:border-b-2 xl:border-orange/40'>
+		<div className=' grid gap-10 lg:gap-20 max-w-7xl mx-auto my-24 xl:pb-16 xl:border-b-2 xl:border-orange/40'>
 			<h1 className='text-center text-3xl xl:text-6xl tracking-widest font-semibold text-orange uppercase opacity-80 f'>
 				Our Range of Services
 			</h1>

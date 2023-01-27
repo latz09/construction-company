@@ -29,7 +29,7 @@ const ImageCarousel = ({}) => {
 	};
 
 	return (
-		<div className='flex flex-col place-items-center  gap-8  m-4 h-full my-16'>
+		<div className='flex flex-col place-items-center  gap-8  m-4 h-full mb-16'>
 			<motion.div
 				className=' '
 				initial={{ opacity: 0 }}

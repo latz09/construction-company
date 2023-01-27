@@ -17,8 +17,8 @@ export default function Home() {
 			<CardLayout data={openingCards} />
 			<Awards />
 			<WhyUs data={reasons} />
-			<CallUsToday />
 		<ImageCarousel />
+			<CallUsToday />
 		</div>
 	);
 }
