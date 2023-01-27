@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 import { carouselImages } from '../../data/data';
 
 const ImageCarousel = ({}) => {
-	console.log(carouselImages)
+	
 
 	const images = carouselImages
 	const [imageIndex, setImageIndex] = useState(0);
@@ -29,7 +29,7 @@ const ImageCarousel = ({}) => {
 	};
 
 	return (
-		<div className='flex flex-col place-items-center  gap-8  m-4 h-full '>
+		<div className='flex flex-col place-items-center  gap-8  m-4 h-full my-16'>
 			<motion.div
 				className=' '
 				initial={{ opacity: 0 }}
