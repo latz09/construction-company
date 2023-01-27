@@ -11,7 +11,7 @@ const Awards = () => {
 				{awards.map((award, index) => (
 					<motion.div
 						key={index}
-						className='p-16 lg:p-0'
+						className='p-4 lg:p-0'
 						initial={{ y: -3 }}
 						animate={{ y: 3 }}
 						transition={{
